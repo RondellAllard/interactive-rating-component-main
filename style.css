@@ -1,0 +1,139 @@
+/* Variables */
+:root {
+  --primary-color: hsl(25, 97%, 53%);
+  /* Neutrals */
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+
+  --Medium-Grey: hsl(216, 12%, 54%);
+  /* Card BG */
+  --Dark-Blue: hsl(213, 19%, 18%);
+  /* BG */
+  /* Button */
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+  /* fonts */
+  --default_font:'Overpass', sans-serif;
+
+}
+/* General */
+html {
+  font-size: 15px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--Very-Dark-Blue);
+
+  font-family: var(--default_font);
+  color: var(--White);
+}
+
+button {
+  width: 80%;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 2rem;
+  color: var(--White);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  background-color: var(--Dark-Blue);
+  border-radius: 10px;
+}
+
+.card > form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Styled Radio CSS */
+input[type="radio"] {
+  display: none;
+}
+
+.radio-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border:none;
+  margin-right: .333rem;
+  background-color: var(--Very-Dark-Blue);
+  transition: background-color 0.3s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.radio-button:hover{
+  background-color: var(--primary-color);
+}
+
+input[type="radio"]:checked + .radio-button {
+  background-color: var(--Light-Grey);
+}
+
+input[type="radio"]:checked + .radio-button:hover {
+
+}
+
+
+input[type="radio"]:checked + label {
+  background-color: blue;
+}
+
+input[type="radio"]:checked:before {
+  background-color: red;
+}
+
+/* Style radio end */
+
+
+/* Footer */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+/* Wave */
+
+/* .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.wave {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.circle:hover .wave {
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+} */

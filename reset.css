@@ -1,0 +1,37 @@
+/* CSS Reset */
+
+/* Reset box-sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Reset margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, li, dl, dt, dd, table, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* Reset list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Reset table styles */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset form styles */
+button, input, select, textarea {
+  font: inherit;
+}
