@@ -17,7 +17,7 @@
 	<!-- Rating state start -->
 	<main>
 		<div class="card">
-			<div id="card-contents">
+			<div id="card-contents" class="card-contents">
 				<div class="icon-frame-circle">
 					<img src="/images/icon-star.svg" alt="">
 				</div>
@@ -27,36 +27,35 @@
 					feedback is appreciated to help us improve our offering!
 				</p>
 				<form>
-					<label>
-						<input type="radio" name="rating" value="1">
-						<span class="radio-button">1</span>
-					</label>
-					<br>
-					<label>
-						<input type="radio" name="rating" value="2">
-						<span class="radio-button">2</span>
-					</label>
-					<br>
-					<label>
-						<input type="radio" name="rating" value="3">
-						<span class="radio-button">3</span>
-					</label>
-					<br>
-					<label>
-						<input type="radio" name="rating" value="4">
-						<span class="radio-button">4</span>
-					</label>
-					<br>
-					<label>
-						<input type="radio" name="rating" value="5">
-						<span class="radio-button">5</span>
-					</label>
-					<button type="submit" id="feedback-submit">Submit</button>
+					<fieldset>
+						<legend aria-hidden="false" class="sr-only">Select from 1 through 5 how you rate our service.</legend>
+						<label>
+							<input type="radio" name="rating" value="1">
+							<span class="radio-button">1</span>
+						</label>
+						<label>
+							<input type="radio" name="rating" value="2">
+							<span class="radio-button">2</span>
+						</label>
+						<label>
+							<input type="radio" name="rating" value="3">
+							<span class="radio-button">3</span>
+						</label>
+						<label>
+							<input type="radio" name="rating" value="4">
+							<span class="radio-button">4</span>
+						</label>
+						<label>
+							<input type="radio" name="rating" value="5">
+							<span class="radio-button">5</span>
+						</label>
+						<button type="submit" id="feedback-submit">Submit</button>
+					</fieldset>
 				</form>
 			</div>
-			<div id="post-rating">
+			<div id="post-rating" class="post-rating">
 				<img src="/images/illustration-thank-you.svg" alt="">
-				<p id="selection-notification">You selected out of 5</p>
+				<p id="selection-notification" class="selection-notification">You selected out of 5</p>
 				<p class="attention">Thank you!</p>
 				<p class="message">
 					We appreciate you taking the time to give a rating. If you ever need

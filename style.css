@@ -82,12 +82,20 @@ button {
   margin-bottom: .2rem;
 }
 
-#card-contents > form {
+.card-contents > form {}
+
+.card fieldset {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
+.sr-only {
+  visibility: hidden;
+}
 
 /* Styled Radio CSS */
 input[type="radio"] {
@@ -130,25 +138,30 @@ input[type="radio"]:checked:before {
 }
 
 /* Style radio end */
-.card-content > p,
 .card button {
   margin-top: 2rem;
 }
 
+.card-contents > p{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 
 
-#post-rating {
+
+
+.post-rating {
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#post-rating img {
+.post-rating img {
   width: 10rem;
 }
 
-#selection-notification {
+.selection-notification {
   display: inline-block;
   height: 2rem;
   padding: 1rem 1rem .1rem;
